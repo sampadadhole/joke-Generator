@@ -21,14 +21,18 @@ function getJokes(e){
         if(response.type==="success"){
             // console.log(1);
             response.value.forEach(function(joke){
-                // console.log(response.value);
-                // const li = document.createElement("li");
-
-                // output.innerHTML = this.responseText.joke;
-                // li.appendChild(output);
                 output +=
-                `<li>${joke.joke}</li>`;
+                `<div class="results>
+                // <div class="emoji"></div>
+                <li><div class="emoji">😂</div>${joke.joke}</li>
+                </div>`;
                 // console.log(output);
+
+                // const test = document.querySelector(".jokes");
+                // test.addEventListener("mouseover", function(event) {
+                //     // console.log("over");
+                //     output +=`<div class="emoji">🤣</div>`;
+                // });
                 
 
             });
@@ -47,8 +51,6 @@ function getJokes(e){
     }
 }
         
-    
-
     xhr.send();
 
     // document.querySelector("input").value="";

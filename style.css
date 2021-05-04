@@ -40,7 +40,19 @@ li{
     color: #3441BC;
     list-style: none;
     font-size: 1.3rem;
+    
 }
+.results{
+    position: absolute;
+}
+.emoji{
+    position: relative;
+    top:-3rem;
+    right:2rem; 
+    height:auto;
+    font-size:2rem;
+}
+
 footer{
     position: relative;
     background-color: #7879F1;
